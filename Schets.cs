@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Drawing;
 
 namespace SchetsEditor
 {
     public class Schets
     {
-        private Bitmap bitmap;
-        
-        public Schets()
+		public Bitmap bitmap { get; set; }
+
+		public Schets()
         {
             bitmap = new Bitmap(1, 1);
         }
